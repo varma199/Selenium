@@ -31,6 +31,7 @@ public class Launch_Firefox {
 			System.out.println("test case Fail");
 		}
 		driver.close();
+		
 
 	}
 

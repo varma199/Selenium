@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Basic_002 {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
+		// dropdown
 		WebDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
