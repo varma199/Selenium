@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="8" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="83" started-at="2023-10-26T00:44:09 IST" finished-at="2023-10-26T00:44:09 IST">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="41" started-at="2023-10-26T00:44:09 IST" finished-at="2023-10-26T00:44:09 IST">
+      <class name="selenum_4.TestNG_validation">
+        <test-method status="FAIL" signature="validation()[pri:0, instance:selenum_4.TestNG_validation@1f554b06]" name="validation" duration-ms="7" started-at="2023-10-26T00:44:09 IST" finished-at="2023-10-26T00:44:09 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual is not equal to exptecd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual is not equal to exptecd
+at org.testng.Assert.fail(Assert.java:99)
+at selenum_4.TestNG_validation.validation(TestNG_validation.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validation -->
+        <test-method status="PASS" signature="validation2()[pri:0, instance:selenum_4.TestNG_validation@1f554b06]" name="validation2" duration-ms="2" started-at="2023-10-26T00:44:09 IST" finished-at="2023-10-26T00:44:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validation2 -->
+        <test-method status="FAIL" signature="validation3()[pri:0, instance:selenum_4.TestNG_validation@1f554b06]" name="validation3" duration-ms="2" started-at="2023-10-26T00:44:09 IST" finished-at="2023-10-26T00:44:09 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+second assertion expected [Yahoo] but found [google],
+3rd assertion expected [gogle] but found [google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+second assertion expected [Yahoo] but found [google],
+3rd assertion expected [gogle] but found [google]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at selenum_4.TestNG_validation.validation3(TestNG_validation.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validation3 -->
+      </class> <!-- selenum_4.TestNG_validation -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="14" started-at="2023-10-26T00:44:09 IST" finished-at="2023-10-26T00:44:09 IST">
+      <class name="selenum_4.TestNG_dependance">
+        <test-method status="PASS" signature="userLoginFooter()[pri:0, instance:selenum_4.TestNG_dependance@7e2d773b]" name="userLoginFooter" duration-ms="1" started-at="2023-10-26T00:44:09 IST" finished-at="2023-10-26T00:44:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLoginFooter -->
+        <test-method status="FAIL" signature="userRegister()[pri:1, instance:selenum_4.TestNG_dependance@7e2d773b]" name="userRegister" duration-ms="1" started-at="2023-10-26T00:44:09 IST" finished-at="2023-10-26T00:44:09 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Registration fail]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Registration fail
+at org.testng.Assert.fail(Assert.java:99)
+at selenum_4.TestNG_dependance.userRegister(TestNG_dependance.java:16)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegister -->
+        <test-method status="PASS" signature="userRegisterFooter()[pri:2, instance:selenum_4.TestNG_dependance@7e2d773b]" name="userRegisterFooter" duration-ms="1" started-at="2023-10-26T00:44:09 IST" finished-at="2023-10-26T00:44:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegisterFooter -->
+        <test-method status="PASS" signature="userLogin()[pri:3, instance:selenum_4.TestNG_dependance@7e2d773b]" name="userLogin" duration-ms="0" started-at="2023-10-26T00:44:09 IST" depends-on-methods="selenum_4.TestNG_dependance.userRegister" finished-at="2023-10-26T00:44:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method status="PASS" signature="HomepageFooter()[pri:0, instance:selenum_4.TestNG_dependance@7e2d773b]" name="HomepageFooter" duration-ms="1" started-at="2023-10-26T00:44:09 IST" depends-on-methods="selenum_4.TestNG_dependance.userLogin" finished-at="2023-10-26T00:44:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomepageFooter -->
+      </class> <!-- selenum_4.TestNG_dependance -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

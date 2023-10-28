@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="selenum_4.TestNG_validation">
+        <methods>
+          <include name="validation3"/>
+          <include name="validation"/>
+        </methods>
+      </class> <!-- selenum_4.TestNG_validation -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="selenum_4.TestNG_dependance">
+        <methods>
+          <include name="userRegister"/>
+        </methods>
+      </class> <!-- selenum_4.TestNG_dependance -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
