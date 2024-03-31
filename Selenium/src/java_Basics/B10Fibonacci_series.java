@@ -10,9 +10,9 @@ public class B10Fibonacci_series {
 	
 	int sum  = 0;
 	
-	for(int i = 2; i<10; i++) {
+	for(int i = 3; i<=10; i++) {
 		sum = n1+n2;
-		System.out.println("Febonacci Series"+i+1+" number : "+sum);
+		System.out.println("Febonacci Series"+i+" number : "+sum);
 		n1 = n2;
 		n2 = sum;
 	}

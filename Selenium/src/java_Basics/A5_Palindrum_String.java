@@ -18,7 +18,7 @@ public class A5_Palindrum_String {
 			rev_str= rev_str+str.charAt(i);
 		}
 		System.out.println("Revers String :   "+ rev_str);
-		if(rev_str.equals(original_str)) {
+		if(rev_str.equals(rev_str)) {
 			System.out.println(original_str+ " is Palindrum");
 		}else {
 			System.out.println(original_str+ " is not Palindrum");

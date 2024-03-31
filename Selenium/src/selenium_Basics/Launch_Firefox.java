@@ -1,7 +1,13 @@
 package selenium_Basics;
 
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Launch_Firefox {
 
@@ -10,9 +16,13 @@ public class Launch_Firefox {
 		String ext_Url= "https://www.yahoo.com/";
 		
 		
+		
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://www.yahoo.com/");
 		String act_Title = driver.getTitle();
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")));
 		System.out.println("-----------------------------------Title----------------------------------------------------");
 		if(act_Title.equals(exp_Title)) {
 			System.out.println("page Title  :"+act_Title+"is displaying successfully");

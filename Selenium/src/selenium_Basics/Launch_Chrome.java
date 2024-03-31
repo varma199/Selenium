@@ -1,5 +1,9 @@
 package selenium_Basics;
 
+import java.io.File;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -21,6 +25,13 @@ public class Launch_Chrome {
 		String url = driver.getCurrentUrl();
 		if(url.equalsIgnoreCase("https://www.google.com/")) {
 			System.out.println("page URL  : "+url+"  displaying as per expected");
+			
+			
+			/*TakesScreenshot sc = ((TakesScreenshot) driver);
+			File scr_file = sc.getScreenshotAs(OutputType.FILE);
+			File DestFile=new File("C:\\Users\\ravit\\git\\Selenium\\Selenium\\Screenshots");
+			FileUtils.*/
+
 		}else {
 			System.out.println("page URL  : "+url+"  not displaying as per expected");
 		}
