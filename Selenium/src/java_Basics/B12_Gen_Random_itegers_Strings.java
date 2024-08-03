@@ -6,7 +6,7 @@ public class B12_Gen_Random_itegers_Strings {
 	
 	public static void random_int1() {
 		Random rd = new Random();
-		int two_digit = rd.nextInt(10);
+		int two_digit = rd.nextInt(100);
 		int three_digit = rd.nextInt(1000);
 		System.out.println("2 digt Random num  :  "+ two_digit);
 		System.out.println("3 digt Random num  :  "+ three_digit);

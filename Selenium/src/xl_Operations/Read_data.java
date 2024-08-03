@@ -2,6 +2,7 @@ package xl_Operations;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.Cell;
@@ -23,6 +24,15 @@ public class Read_data {
 		String data = cel.getStringCellValue();
 		System.out.println(data );
 		
+		
+		XSSFSheet w = wb.getSheetAt(1);
+		Row r = w.getRow(1);
+		Cell c = r.getCell(1);
+		c.setCellValue("RAvi teja");
+		FileOutputStream fo = new FileOutputStream(path);
+		wb.write(fo);
+		
+		
 	}
 	public static void readAllValuesOfFirstRow() throws IOException {
 		System.out.println("-----------------------------------------------------");
@@ -30,7 +40,7 @@ public class Read_data {
 		XSSFWorkbook wb = new XSSFWorkbook(fi);
 		XSSFSheet ws = wb.getSheetAt(0);
 		Row r = ws.getRow(0);
-		int numOfcol = r.getLastCellNum();
+		int numOfcol = r.getLastCellNum(); // to get  cell count
 		for(int i = 0; i<= numOfcol-1; i++) {
 			Row r1 = ws.getRow(0);
 			Cell c1 = r1.getCell(i);
@@ -78,14 +88,7 @@ public class Read_data {
 			}
 			System.out.println(" ");
 		}
-		/*
-		 * int numOfcol = r.getLastCellNum();
-		for(int i = 0; i<= numOfcol-1; i++) {
-			Row r1 = ws.getRow(0);
-			Cell c1 = r1.getCell(i);
-			String str1 = c1.getStringCellValue();
-			System.out.print(str1+"|  ");
-		 */
+		
 		
 		
 			

@@ -12,10 +12,13 @@ public class Day111623 {
 		
 		int n1 = 0;
 		int n2 = 1;
+		System.out.println("1 number of fibonacci seriews"+n1);
+		System.out.println("2 number of fibonacci seriews"+n2);
 		ArrayList< Integer> se = new ArrayList<Integer>();
 		
-		for(int i = 0; i<=6; i++) {
+		for(int i = 2; i<10; i++) {
 			int temp = n1 +n2;
+			System.out.println(i+1+"number of fibonacci seriews"+temp);
 			n1 = n2;
 			n2 =  temp;
 			se.add(temp);

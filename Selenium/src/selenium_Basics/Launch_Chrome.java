@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Launch_Chrome {
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -15,6 +17,7 @@ public class Launch_Chrome {
 		driver.get("https://www.google.com/");
 		String title = driver.getTitle();
 		System.out.println("page Title  :   "+title);
+		
 		
 		if(title.equalsIgnoreCase("Google")) {
 			System.out.println("page title  : "+title+"  displaying as per expected");
@@ -27,11 +30,7 @@ public class Launch_Chrome {
 			System.out.println("page URL  : "+url+"  displaying as per expected");
 			
 			
-			/*TakesScreenshot sc = ((TakesScreenshot) driver);
-			File scr_file = sc.getScreenshotAs(OutputType.FILE);
-			File DestFile=new File("C:\\Users\\ravit\\git\\Selenium\\Selenium\\Screenshots");
-			FileUtils.*/
-
+		
 		}else {
 			System.out.println("page URL  : "+url+"  not displaying as per expected");
 		}
