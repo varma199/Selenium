@@ -19,7 +19,6 @@ public class A4_Palindrum_num {
 			num= num/10;
 		}
 		
-		
 		System.out.println("revers number :  "+rev_num);
 		if(original_number==rev_num) {
 			System.out.println(rev_num+"  is a polindrum number");

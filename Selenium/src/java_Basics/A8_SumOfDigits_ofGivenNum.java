@@ -7,9 +7,9 @@ public class A8_SumOfDigits_ofGivenNum {
 		
 		int sum = 0;
 		while(num>0) {
-			int temp = num%10;
-			sum = sum+temp;
-			num = num/10;
+			int temp = num%10; //remainder
+			sum = sum+temp; // 
+			num = num/10; // chevio
 		}
 		
 		System.out.println("Sum of digits : "+sum);

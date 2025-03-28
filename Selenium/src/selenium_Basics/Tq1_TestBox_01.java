@@ -38,7 +38,7 @@ public class Tq1_TestBox_01 {
 		
 		System.out.println("----------submitting valid data in all filds---------");
 		driver.findElement(By.xpath("//input[@id='userName']")).sendKeys(firstName);
-		driver.findElement(By.xpath("//input[@id='userName']")).i
+		driver.findElement(By.xpath("//input[@id='userName']"));
 		driver.findElement(By.xpath("//input[@id='userEmail']")).sendKeys(mail);
 		driver.findElement(By.id("currentAddress")).sendKeys(address);
 		driver.findElement(By.id("permanentAddress")).sendKeys(pAddress);

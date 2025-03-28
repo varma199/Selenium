@@ -9,7 +9,7 @@ public class A3_Revers_String {
 		System.out.println("-------------------By using logic -----------------");
 		String str = "Varma";
 		String rev = "";
-		int length = str.length();
+		int length = str.length(); // if it is String we need to use length() method 
 		for(int i = length-1; i>=0; i--) {
 			rev = rev+str.charAt(i);
 			}
@@ -21,12 +21,12 @@ public class A3_Revers_String {
 		System.out.println("-------------------Method 2 -----------------");
 		System.out.println("-------------------By using char [] -----------------");
 		String str = "CRTV";
-		char[] ch = str.toCharArray();
+		char[] ch = str.toCharArray(); // if it is char arry ----> we need to use .length to know size
 		
 		String rev = "";
 		int length = ch.length;
 		for(int i = length-1; i>=0; i--) {
-			rev = rev+str.charAt(i);
+			rev = rev+ch[i];
 			}
 		
 		System.out.println("Revers String : "+ rev);

@@ -40,12 +40,12 @@ public class Tq3_RadioButtons {
 	
 	
 	public static void select_yes_RadioButton() throws InterruptedException {
-		System.err.println("-----------------Verifyb  yes radio button is seleted or not-----------------");
+		System.err.println("-----------------Verify  yes radio button is seleted or not-----------------");
 		System.err.println("_________________________________________________________________");
 		WebElement rad_Yes = driver.findElement(By.xpath("//input[@id='yesRadio']"));
 		Actions act = new Actions(driver);
 		act.click(rad_Yes);
-		js.executeScript("arguments[0].click();", rad_Yes);
+		//js.executeScript("arguments[0].click();", rad_Yes);
 		Thread.sleep(2000);
 		
 		//rad_Yes.click();

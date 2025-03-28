@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Basic_002 {
 
 	public static void main(String[] args) throws InterruptedException {
-		// dropdown
+		// drop down
 		WebDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
@@ -67,6 +67,7 @@ public class Basic_002 {
 		slt.selectByValue("2");
 		WebElement selected_option1 = slt.getFirstSelectedOption();
 		String value = selected_option1.getText();		
+		//slt.sele
 		
 				if(value.equals("Option 2")) {
 					System.out.println("value"+value+"selected for drop down");

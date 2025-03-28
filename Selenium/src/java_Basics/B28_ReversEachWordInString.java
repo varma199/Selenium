@@ -28,10 +28,22 @@ public class B28_ReversEachWordInString {
 		}
 		System.out.println("Revers String  :  "+reversString);
 	}
+	
+	public static void revers_words_inString() {
+		String str =  "Ravi Teja";
+		String s[] = str.split(" ");
+		String reves_words= "";
+		for(String st : s) {
+			reves_words = st+reves_words;
+		}
+		System.out.println("String afer reversing words --->"+ reves_words);
+		
+	}
 
 	public static void main(String[] args) {
 		reversString1();
 		reversString2();
+		revers_words_inString();
 		
 			}
 

@@ -25,9 +25,6 @@ public class Write_data {
 		FileOutputStream fo = new FileOutputStream(path);
 		wb.write(fo);
 		fo.close();
-		
-		
-		
 	}
 
 	public static void main(String[] args) throws Throwable {

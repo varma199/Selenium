@@ -8,6 +8,7 @@ public class B15_print_Even_Odd_numbers {
 		int[] a = {12,15,69,85,75,52,42,62,85};
 		ArrayList<Integer> even = new ArrayList<Integer>();
 		ArrayList<Integer>  odd = new ArrayList<Integer>();
+		
 		for(int value : a) {
 			if(value%2 == 0) {
 			even.add(value);
